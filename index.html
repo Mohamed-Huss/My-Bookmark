@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./Images/Bookmark.png">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.CSS">
+</head>
+
+<body>
+    <Section class="main w-100 min-vh-100 position-relative" id="main">
+        <div class="container d-flex flex-column justify-content-center align-items-center py-5 ">
+            <h1 class="py-2 position-relative z-0">Bookmarker</h1>
+            <div
+                class="bookmark_body w-100 d-flex flex-column justify-content-center gap-4 p-3 py-4 mt-5 align-items-center">
+                <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorate sites <i
+                        class="fa-solid fa-bookmark"></i></h2>
+                <div class="site_name w-100 d-flex flex-column">
+                    <label for="siteName" class="mb-2"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                    <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+                </div>
+                <div class="site_url w-100 d-flex flex-column">
+                    <label for="siteUrl" class="mb-2"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                    <input type="url" id="siteUrl" class="form-control" placeholder="Website URL">
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-submit px-5"
+                    onclick="addBookmark ()">Submit</button>
+            </div>
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContent"></tbody>
+            </table>
+        </div>
+
+        <div id="invalidEntry"
+            class="main_box position-absolute w-100 h-100 top-0 start-0 d-none d-flex justify-content-center align-items-center">
+            <div class="content_box bg-light rounded-2 shadow-lg p-4">
+                <div class="content_box_header w-100 d-flex justify-content-between align-items-center mb-4">
+                    <div class="circles d-flex">
+                        <span class="rounded-circle me-2"></span>
+                        <span class="rounded-circle me-2"></span>
+                        <span class="rounded-circle me-2"></span>
+                    </div>
+                    <button id="closeBtn" class="btn border-0" onclick="closeBtn()"><i
+                            class="fa-solid fa-xmark close fs-3"></i></button>
+                </div>
+                <p>
+                    Site Name or Url is not valid, Please follow the rules below :
+                </p>
+                <ol class="rules list-unstyled">
+                    <li>
+                        <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                        contain at least 3 characters
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-circle-right p-2"></i>Site name must be
+                        unique
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                        valid one
+                    </li>
+                </ol>
+
+            </div>
+
+        </div>
+
+
+
+    </Section>
+
+
+
+
+
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
