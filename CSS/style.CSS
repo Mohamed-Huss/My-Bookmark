@@ -52,11 +52,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width:767px){
-  .bookmark_body h2 {
-  font-size: 10px}
-}
-
 .bookmark_body label {
   font-family: "PT Sans Caption", sans-serif;
   font-weight: 600;
