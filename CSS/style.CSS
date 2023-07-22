@@ -8,10 +8,10 @@
 /* Start of Media query for screans <576 px*/
 @media (max-width:576px){
 html{
-font-size: 10px;
+font-size: 12px;
 }
   .container{
-    width: 70%;
+    width: 80%;
   }
 }
 /* End of Media query for screans <576 px */
