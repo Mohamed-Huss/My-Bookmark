@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/* Start body general style*/
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+/* End body general style*/
+
 /* Start of Media query for screans <576 px*/
 @media (max-width:576px){
 html{
@@ -17,12 +23,6 @@ font-size: 8px;
 /* End of Media query for screans <576 px */
 
 /* End General Style */
-
-/* Start body style general style*/
-body {
-  font-family: "PT Sans Caption", sans-serif;
-}
-/* End body style general style*/
 
 /* Start Main Section style */
 .main {
