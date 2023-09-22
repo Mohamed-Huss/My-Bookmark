@@ -13,6 +13,13 @@ Welcome to the `Online Bookmarker` - Your digital aide to keep track of all your
 
 Jump into the world of convenience with this tool. Store, manage, and access your favorite sites from one place.
 
+## Tech Stack 🔧
+
+- **Frontend**: HTML5, CSS3, Bootstrap & JavaScript.
+- **Responsive Design**: Media Query, Bootstrap.
+- **UI & Design Tools**: FontAwesome.
+
+
 ## 💌 Feedback
 
 Loved it? Think there's room for improvement? Whatever be the case, I'd love to hear from you. Your feedback helps in refining and delivering a better experience. Don't hesitate to share your thoughts!
